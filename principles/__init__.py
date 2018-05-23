@@ -7,3 +7,5 @@ Created on Wed May 23 18:10:26 2018
 
 from . import abstraction, encapsulation, inheritance, polymorphism
 from . import naming, open_closed_bad, open_closed_good, tell_dont_ask
+from . import composition, composition_over_inheritance_bad
+from . import composition_over_inheritance_good
