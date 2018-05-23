@@ -34,7 +34,8 @@ def demonstrate():
     client = GmailClient()
     client.setup()
      
-    client.send_email("Hello!")
+    ret_a = client.send_email("Hello!")
+    print(ret_a)
      
     # If we want to send using Yahoo, we have to construct a new client
     # That's OK for a simple example, but can be a major headache for more 
@@ -43,4 +44,5 @@ def demonstrate():
     yahoo_client = YahooMailClient()
     yahoo_client.setup()
      
-    yahoo_client.send_email("Hello!")
+    ret_b = yahoo_client.send_email("Hello!")
+    print(ret_b)

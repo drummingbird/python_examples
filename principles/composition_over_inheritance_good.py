@@ -32,17 +32,19 @@ class EmailClient:
         self.email_provider = provider
  
     def send_email(self, msg):
-        print(self.email_provider.send(msg))
+        return self.email_provider.send(msg)
  
 
 def demonstrate():
     client = EmailClient()
     client.setup()
      
-    client.send_email("Hello World!")
+    ret_a = client.send_email("Hello World!")
+    print(ret_a)
     
     # Now, we can just set a different provider, without having to 
     # create a new email client instance.
     
     client.set_provider(YahooMailProvider())
-    client.send_email("Hello World!")
+    ret_b = client.send_email("Hello World!")
+    print(ret_b)
