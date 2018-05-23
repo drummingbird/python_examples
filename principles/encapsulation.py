@@ -3,6 +3,9 @@
 Created on Wed May 23 17:27:53 2018
 
 @author: Reuben
+
+This module illustrates encapsulation and why it's good.
+
 """
 
 from .abstraction import demonstrate
@@ -30,3 +33,4 @@ class Spring():
 spring = Spring() # An instance of this newly defined Spring class
 # Now try calling demonstrate(spring)
 # The function is unchanged, but the Spring class has changed how it calculates
+

@@ -2,7 +2,11 @@
 """
 Created on Wed May 23 17:30:33 2018
 
+
 @author: Reuben
+
+This module illustrates the principle of polymorphism.
+
 """
 
 from .inheritance import Flexure, Coil

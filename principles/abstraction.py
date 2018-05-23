@@ -3,6 +3,9 @@
 Created on Wed May 23 17:27:22 2018
 
 @author: Reuben
+
+This module illustrates the principle of abstraction.
+
 """
 
 class Spring():

@@ -3,6 +3,10 @@
 Created on Wed May 23 17:32:06 2018
 
 @author: Reuben
+
+This module illustrates the 'open/closed' principle by giving an example
+where the code is closed for modification but open for extension.
+
 """
 
 import numpy as np

@@ -13,12 +13,18 @@ class Line():
     ''' A model of a line with gradient and intercept ''' 
     
     def __init__(self, m, c):
-        self.m = m
-        self.c = c
+        self._m = m # Assigning m to a 'protected' attribute, _m
+        self._c = c # Assigning c to a 'protected' attribute, _c
+        self.m = m # Also assigning m to a public attribute, m
+        self.c = c # Also assigning c to a public attribute, c
 
     def y(self, x):
-        y = self.m * x + self.c
+        y = self._m * x + self._c
         return y
+    
+    def set_m(self, m):
+        self._m = m
+    
 
 default_line = Line(m=5, c=4)
 def demonstrate(line=default_line):
@@ -26,5 +32,5 @@ def demonstrate(line=default_line):
 
 y_1 = demonstrate(default_line)
 
-default_line.m = 3
+default_line.set_m(3)
 y_2 = demonstrate(default_line)

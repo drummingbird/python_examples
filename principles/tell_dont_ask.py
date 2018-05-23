@@ -3,6 +3,9 @@
 Created on Fri Apr 20 13:18:06 2018
 
 @author: Reuben
+
+This module illustrates the "Tell; don't ask" principle.
+
 """
 
 
